@@ -39,9 +39,15 @@ HTTPS 연결 과정(SSL Handshake, TLS Handshake)은 다음과 같다.
 - (10) 사이트는 자신의 개인키를 사용하여 사용자 대칭키를 복호화하여 사용자 대칭 키를 얻어낸다.(사이트 입장: ChangeCipherSpec, Finished)
 
 ```
-CA(Certificate Authority): 인증서의 역할은 클라이언트가 접속한 서버가 의도한 서버가 맞는지 보장하는 것이다. 이 역할을 하는 민간 기업들이 있는데 이런 기업들을 CA 혹은 Root Certificate라 한다. 개발자는 HTTPS를 적용하려면 CA 기업의 인증서를 구입해야 한다. 이 인증서를 구입하면 CA 기업의 개인키를 이용하여 암호화한 인증서를 준다. 이를 SSL 인증서라 하며, 여기에는 서비스의 정보(인증서를 발급한 CA, 서비스의 도메인 등)와 서버 측 공개키가 들어있다.
+CA(Certificate Authority): 인증서의 역할은 클라이언트가 접속한 서버가 의도한 서버가 맞는지 보장하는 것이다.
+이 역할을 하는 민간 기업들이 있는데 이런 기업들을 CA 혹은 Root Certificate라 한다.
+개발자는 HTTPS를 적용하려면 CA 기업의 인증서를 구입해야 한다. 이 인증서를 구입하면 CA 기업의 개인키를 이용하여 암호화한 인증서를 준다.
+이를 SSL 인증서라 하며, 여기에는 서비스의 정보(인증서를 발급한 CA, 서비스의 도메인 등)와 서버 측 공개키가 들어있다.
 
-ClientHello: 클라이언트가 서버에 연결을 시도하며 전송하는 패킷이다. 자신이 사용 가능한 Cipher Suite 목록, Session ID, SSL 프로토콜 버전, Random Byte 등을 전달한다. Cipher Suite는 SSL 프로토콜 버전, 인증서 검정, 데이터 암호화 프로토콜, Hash 방식 등의 정보를 담고 있는 존재로, 선택된 Cipher Suite 알고리즘에 따라 데이터를 암호화하게 된다.
+ClientHello: 클라이언트가 서버에 연결을 시도하며 전송하는 패킷이다.
+자신이 사용 가능한 Cipher Suite 목록, Session ID, SSL 프로토콜 버전, Random Byte 등을 전달한다.
+Cipher Suite는 SSL 프로토콜 버전, 인증서 검정, 데이터 암호화 프로토콜, Hash 방식 등의 정보를 담고 있는 존재로,
+선택된 Cipher Suite 알고리즘에 따라 데이터를 암호화하게 된다.
 ```
 <br> <br>
 참고: https://mangkyu.tistory.com/98 <br>
