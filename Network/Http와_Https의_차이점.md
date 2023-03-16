@@ -34,6 +34,6 @@ HTTPS 연결 과정은 다음과 같다.
 - 클라이언트는 CA의 공개키를 이용해 SSL 인증서를 복호화한다.
 - SSL 내부의 서버 공개키를 이용해 암호화해서 인증서를 서버에게 보낸다.
 - 서버는 개인키로 암호화된 인증서를 복호화하고 다시 암호화하여 클라이언트에게 보낸다. <br> <br>
-참고: https://mangkyu.tistory.com/98
-https://blog.naver.com/PostView.naver?blogId=chodahi&logNo=221385524980
+참고: https://mangkyu.tistory.com/98 <br>
+https://blog.naver.com/PostView.naver?blogId=chodahi&logNo=221385524980 <br>
 https://fomaios.tistory.com/entry/Network-HTTPS%EC%9D%98-%EB%B3%B4%EC%95%88-%EC%9B%90%EB%A6%ACfeat-SSL%EA%B3%B5%EA%B0%9C%ED%82%A4-%EC%95%94%ED%98%B8%ED%99%94-%EB%B0%A9%EC%8B%9D
