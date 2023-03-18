@@ -141,7 +141,7 @@ public class SimpleCorsFilter implements Filter {
 }
 ```
 
-출처:https://velog.io/@nemo/cors <br>
+참고:https://velog.io/@nemo/cors <br>
 https://bohyeon-n.github.io/deploy/web/cors.html <br>
 https://velog.io/@wiostz98kr/CORS%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83 <br>
 https://developer.mozilla.org/ko/docs/Web/HTTP/CORS
