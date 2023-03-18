@@ -89,5 +89,5 @@ RESTful API는 REST의 설계 규칙을 잘 지켜서 설계된 API다. <br>
 ## 결론
 URI는 정보의 자원만 표현해야 하며, 자원의 행위는 HTTP Method에 명시한다.
 <br> <br>
-출처: https://dev-coco.tistory.com/97 <br>
+참고: https://dev-coco.tistory.com/97 <br>
 https://www.youtube.com/watch?v=iOueE9AXDQQ
