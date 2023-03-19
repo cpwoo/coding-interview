@@ -11,5 +11,6 @@ ISP와 개인 사용자는 여러 종류의 형태로 연결된다.
 ## National ISP - Local ISP (국가 ISP - 지역 ISP)
 우리나라에서의 ISP는 국가 ISP와 지역 ISP 두 범주로 분류된다.
 - National ISP: 국가 ISP는 전국을 커버할 수 있도록 지역 곳곳에 스위치를 `Partially Connected Mesh(부분 메쉬형)` 구조로 설치해놓았다. KT, SKT, LG U+ 세 기업이 운영하고 있다.
-- Local ISP: 지역 ISP 내부는 다수의 Server와 Router들이 상호 연결된 구조로 구성되어 있다. 지역 ISP는 트래픽 수요에 따라 두 개 이상의 국가 ISP에 연결될 수도 있다. 해당 지역의 인터넷/TV 연결 서비스 업체들이 이에 해당된다. <br> <br>
+- Local ISP: 지역 ISP 내부는 다수의 Server와 Router들이 상호 연결된 구조로 구성되어 있다. 지역 ISP는 트래픽 수요에 따라 두 개 이상의 국가 ISP에 연결될 수도 있다. 해당 지역의 인터넷/TV 연결 서비스 업체들이 이에 해당된다.
+
 참고: https://dad-rock.tistory.com/192
