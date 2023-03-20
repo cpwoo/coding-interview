@@ -43,7 +43,7 @@ Origin: http://localhost:3000
 단순 요청은 예비 요청없이 바로 서버에게 본 요청부터 보낸 후, 서버가 이에 대한 응답의 헤더에 Access-Control-Allow-Origin과 같은 값을 보내주면 그때 브라우저가 CORS 정책 위반 여부를 검사하는 방식이다. 즉, Preflight와 단순 요청 시나리오는 전반적인 로직 자체는 같고, 예비 요청의 존재 유무만 다르다. <br>
 이 시나리오는 아래 조건들을 모두 만족해야만 예비 요청을 생략할 수 있다.
 1. 요청의 메소드는 GET, HEAD, POST 중 하나여야 한다.
-2. Accept, Accept-Languge, Content-Language, Content-Type, DPR, Downlink, Save-Data, Viewport-Width, Width를 제외한 헤더를 사용하면 안된다.
+2. Accept, Accept-Language, Content-Language, Content-Type, DPR, Downlink, Save-Data, Viewport-Width, Width를 제외한 헤더를 사용하면 안된다.
 3. 만약 Content-Type을 사용하는 경우에는 application/x-www-form-urlencoded, multipart/form-data, text/plain만 허용된다.
 
 이 중 2,3번 조건이 까다롭다. 사용자 인증에 사용되는 Authorization 헤더도 사용하면 안 되고, 대부분의 HTTP API에서 사용되는 text/xml이나 application/json 컨텐츠 타입도 가지면 안된다. 따라서 이 시나리오는 현실적으로 조건을 만족시키기 어렵다.
